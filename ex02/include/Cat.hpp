@@ -5,10 +5,13 @@
 #ifndef CAT_HPP
 #define CAT_HPP
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
+#include "Brain.hpp"
 
 class Cat : public virtual Animal
 {
+	private:
+		Brain* brain;
 	public:
         Cat();
         virtual ~Cat();
@@ -16,7 +19,5 @@ class Cat : public virtual Animal
         Cat& operator=(const Cat& other);
         virtual void makeSound() const;
 };
-
-
 
 #endif //CAT_HPP
