@@ -29,6 +29,11 @@ DEPS_BONUS        =   $(patsubst %.cpp, $(BUILD_DIR)%.d, $(SRC_BONUS))
 #=-=-=-=-=-=-ROOT-=-=-=-=-=#
 
 SRC =   main.cpp \
+		Animal.cpp \
+		Dog.cpp \
+		Cat.cpp \
+		WrongAnimal.cpp \
+		WrongCat.cpp \
 
 #=-=-=-=-=-=-INCLUDES-=-=-=-=-=#
 
