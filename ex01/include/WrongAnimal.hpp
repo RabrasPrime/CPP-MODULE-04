@@ -5,7 +5,7 @@
 #ifndef WRONGANIMAL_HPP
 #define WRONGANIMAL_HPP
 
-
+#include <iostream>
 
 class WrongAnimal {
 	protected:
@@ -15,7 +15,7 @@ class WrongAnimal {
         ~WrongAnimal();
         WrongAnimal(const WrongAnimal& other);
 		WrongAnimal& operator=(const WrongAnimal& other);
-        void makeSound() const = 0;
+        void makeSound() const;
         std::string getType() const;
 };
 

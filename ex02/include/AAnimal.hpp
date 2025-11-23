@@ -5,15 +5,15 @@
 
 #include <iostream>
 
-class Animal {
+class AAnimal {
 	protected:
         std::string type;
 	public:
-        Animal();
-        virtual ~Animal();
-		Animal(const Animal& other);
-        Animal& operator=(const Animal& other);
-        virtual void makeSound() const;
+        AAnimal();
+        virtual ~AAnimal();
+        AAnimal(const AAnimal& other);
+        AAnimal& operator=(const AAnimal& other);
+        virtual void makeSound() const = 0;
         std::string getType() const;
 };
 

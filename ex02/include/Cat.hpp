@@ -8,7 +8,7 @@
 #include "AAnimal.hpp"
 #include "Brain.hpp"
 
-class Cat : public virtual Animal
+class Cat : public virtual AAnimal
 {
 	private:
 		Brain* brain;

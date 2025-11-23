@@ -2,32 +2,32 @@
 // Created by tomjo on 29/10/2025.
 //
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 
-Animal::Animal() : type("Animal") {
-    // std::cout << "Animal default constructor called" << std::endl;
+AAnimal::AAnimal() : type("AAnimal") {
+    // std::cout << "AAnimal default constructor called" << std::endl;
 }
 
-Animal::~Animal() {
-    // std::cout << "Animal destructor called" << std::endl;
+AAnimal::~AAnimal() {
+    // std::cout << "AAnimal destructor called" << std::endl;
 }
 
-Animal::Animal(const Animal& other) : type(other.type) {
-    // std::cout << "Animal copy constructor called" << std::endl;
+AAnimal::AAnimal(const AAnimal& other) : type(other.type) {
+    // std::cout << "AAnimal copy constructor called" << std::endl;
 }
 
-Animal& Animal::operator=(const Animal& other) {
-    // std::cout << "Animal assignment operator called" << std::endl;
+AAnimal& AAnimal::operator=(const AAnimal& other) {
+    // std::cout << "AAnimal assignment operator called" << std::endl;
     if (this != &other) {
         this->type = other.type;
     }
     return *this;
 }
 
-void Animal::makeSound() const {
-    std::cout << "Animal sound" << std::endl;
+std::string AAnimal::getType() const {
+    return this->type;
 }
 
-std::string Animal::getType() const {
-    return this->type;
+void AAnimal::makeSound() const {
+    std::cout << "AAnimal sound" << std::endl;
 }
