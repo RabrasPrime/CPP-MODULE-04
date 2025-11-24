@@ -18,6 +18,7 @@ class Dog : public virtual AAnimal
         Dog(const Dog& other);
         Dog& operator=(const Dog& other);
         virtual void makeSound() const;
+		Brain* getBrain() const;
 };
 
 

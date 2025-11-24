@@ -18,6 +18,7 @@ class Cat : public virtual AAnimal
         Cat(const Cat& other);
         Cat& operator=(const Cat& other);
         virtual void makeSound() const;
+		Brain* getBrain() const;
 };
 
 #endif //CAT_HPP

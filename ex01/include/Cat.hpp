@@ -13,6 +13,7 @@ class Cat : public virtual Animal
 private:
 	Brain* brain;
 public:
+	Brain* getBrain() const;
 	Cat();
 	virtual ~Cat();
 	Cat(const Cat& other);

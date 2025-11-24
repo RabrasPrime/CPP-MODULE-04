@@ -14,6 +14,7 @@ private:
 	Brain* brain;
 public:
 	Dog();
+	Brain* getBrain() const;
 	virtual ~Dog();
 	Dog(const Dog& other);
 	Dog& operator=(const Dog& other);
